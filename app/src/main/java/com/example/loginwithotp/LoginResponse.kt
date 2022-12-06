@@ -1,7 +1,7 @@
 package com.example.loginwithotp
 
 
-data class LoginResponseModel(
+data class LoginResponse(
     val code: Int = 0,
     val message: String = "",
     val user: User = User()

@@ -7,7 +7,7 @@ class MainViewModel :ViewModel(){
 
     private val repository = Repository()
 
-            fun postModel() : MutableLiveData<Resource<Response>>{
-                return repository.postRepo()
+            fun loginCall(mobile:String) : MutableLiveData<Resource<CommomResponse>>{
+                return repository.logindetails(mobile)
             }
 }
